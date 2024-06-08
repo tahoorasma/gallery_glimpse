@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+
+<head>
+  <title>GG</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="images/img/gallery-icon.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css"
+    href="//fonts.googleapis.com/css?family=Lato:400,700%7COpen+Sans:400,600,700%7CSource+Code+Pro:300,400,500,600,700,900%7CNothing+You+Could+Do%7CPoppins:400,500">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .cart-count {
+      position: absolute;
+      top: 10px;
+      right: -10px;
+      transform: translate(50%, 50%);
+      background-color: #4ac4cf;
+      color: white;
+      border-radius: 50%;
+      padding: 4px;
+      font-size: 12px;
+      line-height: 1;
+    }
+
+    .ie-panel {
+      display: none;
+      background: #212121;
+      padding: 10px 0;
+      box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
+      clear: both;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    html.ie-10 .ie-panel,
+    html.lt-ie-10 .ie-panel {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img
+        src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820"
+        alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a>
+  </div>
+  <div class="preloader">
+    <div class="preloader-body">
+      <div class="cssload-container">
+        <div class="cssload-speeding-wheel"></div>
+      </div>
+    </div>
+  </div>
+  <div class="page">
+    <!-- Page Header-->
+    <header class="section page-header">
+      <!--RD Navbar-->
+      <div class="rd-navbar-wrap" style="position: absolute">
+        <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
+          data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-fixed"
+          data-lg-device-layout="rd-navbar-fixed" data-xl-layout="rd-navbar-static"
+          data-xl-device-layout="rd-navbar-static" data-xxl-layout="rd-navbar-static"
+          data-xxl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px"
+          data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+          <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse">
+            <span></span>
+          </div>
+          <div class="rd-navbar-main-outer">
+            <div class="rd-navbar-main">
+              <!--RD Navbar Panel-->
+              <div class="rd-navbar-panel">
+                <!--RD Navbar Toggle-->
+                <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                <!--RD Navbar Brand-->
+                <div class="rd-navbar-brand">
+                  <!--Brand<a class="brand" href="index.html"><img src="images/logo-default-296x52.png" alt="" width="148" height="26"/></a>-->
+                  <!--Brand--><a class="brand" href="index.html">Gallery Glimpse</a>
+                </div>
+              </div>
+              <div class="rd-navbar-main-element">
+                <div class="rd-navbar-nav-wrap">
+                  <ul class="rd-navbar-nav">
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="artists.html">Artists</a>
+                    </li>
+                    <li class="rd-nav-item active"><a class="rd-nav-link" href="events.html">Events</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="shop.html">Shop</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Contacts</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="rd-navbar-collapse">
+                <ul class="socialite-list">
+                  <li><a class="icon novi-icon socialite fa-facebook" href="#"></a></li>
+                  <li><a class="icon novi-icon socialite fa-twitter" href="#"></a></li>
+                  <li><a class="icon novi-icon socialite fa-instagram" href="#"></a></li>
+                  <li>
+                    <a id="cart-icon" class="icon novi-icon socialite fas fa-shopping-cart"
+                      href="cart.html?cart=${cartData}`">
+                      <span id="cart-count" class="cart-count">0</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div></br></br><br></br></div>
+    <div><br></div>
+    <div><br></div>
+
+    <section class="section section-lg-5 bg-default">
+      <!-- Owl Carousel-->
+      <div id="oc" class="owl-carousel owl-carousel-bio" data-items="1" data-sm-items="1" data-md-items="1"
+        data-lg-items="1" data-xl-items="1" data-xxl-items="1" data-autoplay="false" data-nav="true" data-dots="true"
+        data-loop="true" data-mouse-drag="false" data-stage-padding="0" data-margin="0"
+        data-nav-text="[&quot;prev&quot;,&quot;next&quot;]">
+
+        <div class="box-bio" id="event1">
+          <div class="box-bio-year">May 19</div>
+          <div class="box-bio-body">
+            <h5 id="name" class="box-bio-title">Bookworm: A Literary Journey Through Art</h5>
+            <p class="box-bio-text"><strong>by Creative Canvas Co.</strong></p>
+            <div class="row" style="margin-top: 15px">
+              <div class="col-lg-8">
+                <p class="box-bio-text" style="color:#55759d"><strong>19 May 10:00 AM - 22 May 5:00 PM</strong></p>
+                <div><br></div>
+                <p class="box-bio-text">Step into a world where words come alive through brushstrokes and colors in
+                  "Bookworm: A<br>
+                  Literary Journey Through Art." This captivating exhibition celebrates the timeless bond<br>
+                  between literature and visual expression, inviting visitors on an enchanting exploration of<br>
+                  beloved stories, characters, and the magic of books.</p>
+                <p class="box-bio-text">Wander through the gallery and immerse yourself in scenes inspired by iconic
+                  literary<br>
+                  works. Lose yourself in the whimsical landscapes of fantasy realms, where dragons soar<br>
+                  and mythical creatures roam. Feel the romance and drama unfold in vivid portrayals of love<br>
+                  stories and historical epics. Encounter the haunting mysteries of gothic tales, where<br>
+                  shadows dance and secrets lurk in every corner.</p>
+                <p class="box-bio-text"></p>
+                <div><br></div>
+                <div><br></div>
+                <div>
+                  <a id="buyButton" class="button button-primary button-lg"
+                    onclick="addToCart('Bookworm: A Literary Journey Through Art', 'Tickets', 'images/img/ticket.jpg', '65', '1')">Buy
+                    Tickets</a>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="box-image-1"><img src="images/img/bw-event.jpg" alt="" width="450" height="276" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-bio" id="event2">
+          <div class="box-bio-year">June 12</div>
+          <div class="box-bio-body">
+            <h5 id="name" class="box-bio-title">Ultra Flowers Festival: Wings of Art</h5>
+            <p class="box-bio-text"><strong>by Artistry Avenue</strong></p>
+            <div class="row" style="margin-top: 15px">
+              <div class="col-lg-8">
+                <p class="box-bio-text" style="color:#55759d"><strong>12 June 12:00 PM - 14 June 12:00 PM</strong></p>
+                <div><br></div>
+                <p class="box-bio-text">Step into a world where words come alive through brushstrokes and colors in
+                  "Ultra <br>
+                  Flowers Birds: Wings of Art." This captivating exhibition celebrates the timeless bond<br>
+                  between literature and visual expression, inviting visitors on an enchanting exploration of<br>
+                  beloved stories, characters, and the magic of books.</p>
+                <p class="box-bio-text">Wander through the gallery and immerse yourself in scenes inspired by iconic
+                  literary<br>
+                  works. Lose yourself in the whimsical landscapes of fantasy realms, where dragons soar<br>
+                  and mythical creatures roam. Feel the romance and drama unfold in vivid portrayals of love<br>
+                  stories and historical epics. Encounter the haunting mysteries of gothic tales, where<br>
+                  shadows dance and secrets lurk in every corner.</p>
+                <p class="box-bio-text"></p>
+                <div><br></div>
+                <div><br></div>
+                <div>
+                  <a id="buyButton" class="button button-primary button-lg"
+                    onclick="addToCart('Ultra Flowers Festival: Wings of Art', 'Tickets', 'images/img/ticket.jpg', '65', '1')">Buy
+                    Tickets</a>
+                </div>
+                <div><br></div>
+                <div><br></div>
+              </div>
+              <div class="col-lg-4">
+                <div class="box-image-1"><img src="images/img/ubf-event.jpg" alt="" width="450" height="276" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-bio" id="event3">
+          <div class="box-bio-year">Aug 21</div>
+          <div class="box-bio-body">
+            <h5 id="name" class="box-bio-title">Portraits: Feathers & Frames</h5>
+            <p class="box-bio-text"><strong>by Palette Perfection Studios</strong></p>
+            <div class="row" style="margin-top: 15px">
+              <div class="col-lg-8">
+                <p class="box-bio-text" style="color:#55759d"><strong>21 Aug 11:00 AM - 23 Aug 6:00 PM</strong></p>
+                <div><br></div>
+                <p class="box-bio-text">Step into a world where words come alive through brushstrokes and colors in
+                  "Potraits: <br>
+                  Feathers & Frames." This captivating exhibition celebrates the timeless bond<br>
+                  between literature and visual expression, inviting visitors on an enchanting exploration of<br>
+                  beloved stories, characters, and the magic of books.</p>
+                <p class="box-bio-text">Wander through the gallery and immerse yourself in scenes inspired by iconic
+                  literary<br>
+                  works. Lose yourself in the whimsical landscapes of fantasy realms, where dragons soar<br>
+                  and mythical creatures roam. Feel the romance and drama unfold in vivid portrayals of love<br>
+                  stories and historical epics. Encounter the haunting mysteries of gothic tales, where<br>
+                  shadows dance and secrets lurk in every corner.</p>
+                <p class="box-bio-text"></p>
+                <div><br></div>
+                <div><br></div>
+                <div>
+                  <a id="buyButton" class="button button-primary button-lg"
+                    onclick="addToCart('Portraits: Feathers & Frames', 'Tickets', 'images/img/ticket.jpg', '65', '1')">Buy
+                    Tickets</a>
+                </div>
+                <div><br></div>
+                <div><br></div>
+              </div>
+              <div class="col-lg-4">
+                <div class="box-image-1"><img src="images/img/p-event.jpg" alt="" width="450" height="276" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-bio" id="event4">
+          <div class="box-bio-year">Sep 25</div>
+          <div class="box-bio-body">
+            <h5 id="name" class="box-bio-title">Landscapes Fest: Horizon Explorations</h5>
+            <p class="box-bio-text"><strong>by Visionary Vistas Artworks</strong></p>
+            <div class="row" style="margin-top: 15px">
+              <div class="col-lg-8">
+                <p class="box-bio-text" style="color:#55759d"><strong>25 Sep 9:00 AM - 27 Sep 3:00 PM</strong></p>
+                <div><br></div>
+                <p class="box-bio-text">Step into a world where words come alive through brushstrokes and colors in
+                  "Landscapes Fest: <br>
+                  Horizon Explorations." This captivating exhibition celebrates the timeless bond<br>
+                  between literature and visual expression, inviting visitors on an enchanting exploration of<br>
+                  beloved stories, characters, and the magic of books.</p>
+                <p class="box-bio-text">Wander through the gallery and immerse yourself in scenes inspired by iconic
+                  literary<br>
+                  works. Lose yourself in the whimsical landscapes of fantasy realms, where dragons soar<br>
+                  and mythical creatures roam. Feel the romance and drama unfold in vivid portrayals of love<br>
+                  stories and historical epics. Encounter the haunting mysteries of gothic tales, where<br>
+                  shadows dance and secrets lurk in every corner.</p>
+                <p class="box-bio-text"></p>
+                <div><br></div>
+                <div><br></div>
+                <div>
+                  <a id="buyButton" class="button button-primary button-lg"
+                    onclick="addToCart('Landscapes Fest: Horizon Explorations', 'Tickets', 'images/img/ticket.jpg', '65', '1')">Buy
+                    Tickets</a>
+                </div>
+                <div><br></div>
+                <div><br></div>
+              </div>
+              <div class="col-lg-4">
+                <div class="box-image-1"><img src="images/img/ls-event.jpg" alt="" width="450" height="276" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-bio" id="event5">
+          <div class="box-bio-year">Oct 18</div>
+          <div class="box-bio-body">
+            <h5 id="name" class="box-bio-title">WonderLand : A Journey Beyond Enchanted Realms</h5>
+            <p class="box-bio-text"><strong>by ChromaCraft Creations</strong></p>
+            <div class="row" style="margin-top: 15px">
+              <div class="col-lg-8">
+                <p class="box-bio-text" style="color:#55759d"><strong>18 Oct 11:00 AM - 18 Oct 4:00 PM</strong></p>
+                <div><br></div>
+                <p class="box-bio-text">Step into a world where words come alive through brushstrokes and colors in
+                  "WonderLand: A<br>
+                  Journey Beyond Enchanted Realms." This captivating exhibition celebrates the timeless bond<br>
+                  between literature and visual expression, inviting visitors on an enchanting exploration of<br>
+                  beloved stories, characters, and the magic of books.</p>
+                <p class="box-bio-text">Wander through the gallery and immerse yourself in scenes inspired by iconic
+                  literary<br>
+                  works. Lose yourself in the whimsical landscapes of fantasy realms, where dragons soar<br>
+                  and mythical creatures roam. Feel the romance and drama unfold in vivid portrayals of love<br>
+                  stories and historical epics. Encounter the haunting mysteries of gothic tales, where<br>
+                  shadows dance and secrets lurk in every corner.</p>
+                <p class="box-bio-text"></p>
+                <div><br></div>
+                <div><br></div>
+                <div>
+                  <a id="buyButton" class="button button-primary button-lg"
+                    onclick="addToCart('WonderLand : A Journey Beyond Enchanted Realms', 'Tickets', 'images/img/ticket.jpg', '65', '1')">Buy
+                    Tickets</a>
+                </div>
+                <div><br></div>
+                <div><br></div>
+              </div>
+              <div class="col-lg-4">
+                <div class="box-image-1"><img src="images/img/ls-gal.jpg" alt="" width="450" height="276" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box-bio" id="event6">
+          <div class="box-bio-year">Nov 12</div>
+          <div class="box-bio-body">
+            <h5 id="name" class="box-bio-title">Let Canvas Roll: Brushstrokes Unleashed</h5>
+            <p class="box-bio-text"><strong>by Artisanal Aura Studios</strong></p>
+            <div class="row" style="margin-top: 15px">
+              <div class="col-lg-8">
+                <p class="box-bio-text" style="color:#55759d"><strong>12 Nov 1:00 PM - 14 May 5:00 PM</strong></p>
+                <div><br></div>
+                <p class="box-bio-text">Step into a world where words come alive through brushstrokes and colors in
+                  "Let Canvas Roll: <br>
+                  Brushstrokes Unleashed." This captivating exhibition celebrates the timeless bond<br>
+                  between literature and visual expression, inviting visitors on an enchanting exploration of<br>
+                  beloved stories, characters, and the magic of books.</p>
+                <p class="box-bio-text">Wander through the gallery and immerse yourself in scenes inspired by iconic
+                  literary<br>
+                  works. Lose yourself in the whimsical landscapes of fantasy realms, where dragons soar<br>
+                  and mythical creatures roam. Feel the romance and drama unfold in vivid portrayals of love<br>
+                  stories and historical epics. Encounter the haunting mysteries of gothic tales, where<br>
+                  shadows dance and secrets lurk in every corner.</p>
+                <p class="box-bio-text"></p>
+                <div><br></div>
+                <div><br></div>
+                <div>
+                  <a id="buyButton" class="button button-primary button-lg"
+                    onclick="addToCart('Let Canvas Roll: Brushstrokes Unleashed', 'Tickets', 'images/img/ticket.jpg', '65', '1')">Buy
+                    Tickets</a>
+                </div>
+                <div><br></div>
+                <div><br></div>
+              </div>
+              <div class="col-lg-4">
+                <div class="box-image-1"><img src="images/img/lcr-event.jpg" alt="" width="450" height="276" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="section footer-classic bg-default">
+      <div class="container">
+        <div class="row row-15">
+          <div class="col-sm-6">
+            <p class="rights">
+              <span< /span><span>&nbsp;</span><span>&copy;&nbsp;</span><span
+                  class="copyright-year"></span><span>&nbsp;</span><span>\&nbsp;</span>All Rights Reserved
+                \ <a href="index.html">Gallery Glimpse</a>
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <div class="footer-contact"><a href="contacts.html">
+                <div class="icon novi-icon mdi mdi-email-outline"></div>Contact Us
+              </a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <div class="snackbars" id="form-output-global"></div>
+  <script src="js/core.min.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    function updCartIcon() {
+      const cartCount = document.getElementById('cart-count');
+      const cartIcon = document.getElementById('cart-icon');
+      if (cartCount) {
+        const numItems = cart.length;
+        cartCount.textContent = numItems;
+      }
+    }
+    function loadCartFromSession() {
+      const storedCart = sessionStorage.getItem('cart');
+      if (storedCart) {
+        cart = JSON.parse(storedCart);
+        updCartIcon();
+      }
+    }
+    function addToCart(name, imageLink, artist, price, quantity) {
+      const storedCart = sessionStorage.getItem('cart');
+      const cart = storedCart ? JSON.parse(storedCart) : [];
+      const itemExists = cart.some(item => item.name === name);
+      console.log(cart);
+      if (itemExists) {
+        window.location.href = "cart.html";
+      }
+      else {
+        const item = {
+          name: name,
+          imageLink: 'images/img/ticket.jpg',
+          quantity: quantity,
+          price: price
+        };
+        cart.push(item);
+        sessionStorage.setItem('cart', JSON.stringify(cart));
+        loadCartFromSession();
+        const cartCount = document.getElementById('cart-count');
+        const cartIcon = document.getElementById('cart-icon');
+        if (cartCount) {
+          const numItems = cart.length;
+          cartCount.textContent = numItems;
+        }
+        alert("A Ticket for " + name + " added to cart. View cart to add more");
+        console.log(cart);
+        updCartIcon();
+      }
+    }
+    async function getQuantityFromDB(name) {
+      try {
+        const response = await fetch('http://localhost:5500/search/' + name);
+        const data = await response.json();
+        if (data.data !== null) {
+          return data.data;
+        }
+        return 0;
+      } catch (error) {
+        console.error('Error fetching quantity:', error);
+        return 0;
+      }
+    }
+
+    async function updateButton() {
+      const elements = document.querySelectorAll(".box-bio");
+      elements.forEach(async (element) => {
+        const eventName = element.querySelector(".box-bio-title").textContent;
+        const quantity = await getQuantityFromDB(eventName);
+        const buyButton = element.querySelector(".button");
+        console.log("name: "+eventName);
+        console.log("quan: "+quantity);
+        if (quantity === 0) {
+          buyButton.style.backgroundColor = "white";
+          buyButton.style.color = "#4ac4cf";
+          buyButton.disabled = true;
+          buyButton.style.cursor = "not-allowed";
+          buyButton.removeAttribute("onclick");
+        }
+      });
+    }
+
+    window.addEventListener('load', updateButton);
+
+
+    window.addEventListener('load', loadCartFromSession);
+    window.addEventListener('load', updateButton);
+  </script>
+</body>
+
+</html>

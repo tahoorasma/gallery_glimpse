@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+
+<head>
+    <title>GG</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="images/img/gallery-icon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css"
+        href="//fonts.googleapis.com/css?family=Lato:400,700%7COpen+Sans:400,600,700%7CSource+Code+Pro:300,400,500,600,700,900%7CNothing+You+Could+Do%7CPoppins:400,500">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .cart-table {
+            width: 100%;
+            border-collapse: collapse;
+            border-left: 1px solid white;
+            border-right: 1px solid white;
+            margin-left: 0px;
+            margin-right: 30px;
+        }
+        .cart-table th, .cart-table td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid white;
+            border-top: 1px solid white;
+            margin: 10px;
+        }
+        .cart-table th {
+            background-color: #222d4f;
+        }
+        .btn-primary {
+            float: right;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            background-color: #355081;
+            border-color: #00050f;
+            margin: 15px;
+        }
+        
+        .breadcrumbs {
+            margin-bottom: 20px;
+            text-align: center;
+            background-color: rgb(45, 53, 83);
+        }
+
+        .breadcrumbs ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .breadcrumbs li {
+            display: inline;
+            margin-right: 5px;
+        }
+
+        .breadcrumbs li:not(:last-child):after {
+            content: " /";
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        .breadcrumbs li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .breadcrumbs li a:hover {
+            text-decoration: underline;
+        }
+
+        .ie-panel {
+            display: none;
+            background: #212121;
+            padding: 10px 0;
+            box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
+            clear: both;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        .fa {
+            font-size:14px;
+            margin: 10px;
+        }
+        .fa:hover {
+            color: #4ac4cf;
+        }
+        html.ie-10 .ie-panel,
+        html.lt-ie-10 .ie-panel {
+            display: block;
+        }
+        .hover-text {
+            color: aliceblue;
+        }
+
+        .hover-text:hover {
+            color: #4ac4cf;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="ie-panel">
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/">
+            <img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820"
+                alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today.">
+        </a>
+    </div>
+    <div class="preloader">
+        <div class="preloader-body">
+            <div class="cssload-container">
+                <div class="cssload-speeding-wheel"></div>
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <header class="section page-header">
+            <div class="rd-navbar-wrap" style="position: absolute">
+                <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed"
+                    data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed"
+                    data-lg-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-fixed"
+                    data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static"
+                    data-xxl-layout="rd-navbar-static" data-xxl-device-layout="rd-navbar-static"
+                    data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px"
+                    data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+                    <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1"
+                        data-rd-navbar-toggle=".rd-navbar-collapse"><span></span></div>
+                    <div class="rd-navbar-main-outer">
+                        <div class="rd-navbar-main">
+                            <div class="rd-navbar-panel">
+                                <button class="rd-navbar-toggle"
+                                    data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                                <div class="rd-navbar-brand">
+                                    <a class="brand" href="index.html">Gallery Glimpse</a>
+                                </div>
+                            </div>
+                            <div class="rd-navbar-main-element">
+                                <div class="rd-navbar-nav-wrap">
+                                    <ul class="rd-navbar-nav">
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Home</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="gallery.html">Gallery</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="artists.html">Artists</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="events.html">Events</a>
+                                        </li>
+                                        <li class="rd-nav-item active"><a class="rd-nav-link" href="shop.html">Shop</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="blog.html">Blog</a>
+                                        </li>
+                                        <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Contacts</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="rd-navbar-collapse">
+                                <ul class="socialite-list">
+                                    <li><a class="icon novi-icon socialite fa-facebook" href="#"></a></li>
+                                    <li><a class="icon novi-icon socialite fa-twitter" href="#"></a></li>
+                                    <li><a class="icon novi-icon socialite fa-instagram" href="#"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div><br><br></div>
+        <section class="section section-md bg-default" id="cart-section">
+            <div class="container">
+                <div class="breadcrumbs">
+                    <ul>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li style="color: #4ac4cf;">Cart</li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button class="btn btn-primary" onclick="continueShopping()">Continue Shopping</button>
+                        <table class="cart-table" id="cart-table">
+                            <thead>
+                                <tr>
+                                    <th colspan="1"></th>
+                                    <th>Name</th>
+                                    <th>Quantity</th>
+                                    <th>Price</th>
+                                    <th>Remove</th>
+                                </tr>
+                            </thead>
+                            <tbody id="cart-items">
+                                <!-- Cart items will be dynamically added here -->
+                            </tbody>
+                        </table> 
+                        <div class="cart-subtotal-box">
+                            <div style="position: absolute; right: 20px;">
+                                <div style="padding-top: 15px;">
+                                    <h6 id="cart-subtotal">Cart Subtotal: </h6>
+                                </div>
+                                <button class="btn btn-primary" onclick="checkout()">Proceed to Checkout</button>
+                            </div>
+                        </div>
+                    </div>                               
+                </div>
+            </div>
+        </section>        
+    </div>
+        <footer class="section footer-classic bg-default">
+            <div class="container">
+                <div class="row row-15">
+                    <div class="col-sm-6">
+                        <p class="rights">
+                            <span></span><span>&nbsp;</span><span>&copy;&nbsp;</span><span
+                                class="copyright-year"></span><span>&nbsp;</span><span>\&nbsp;</span>All Rights Reserved
+                            \ <a href="index.html">Gallery Glimpse</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="footer-contact"><a href="contacts.html">
+                                <div class="icon novi-icon mdi mdi-email-outline"></div>Contact Us
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        function displayCart() {
+            const cartItems = document.getElementById('cart-items');
+            const sec = document.getElementById('cart-section');
+            const storedCart = sessionStorage.getItem('cart');
+            if (!storedCart || storedCart.length === 2) {
+                sec.innerHTML = `
+                <div style = "padding-left:180px;">
+                <h4>Cart is empty!</h4>
+                <p>Click <a href="shop.html">here</a> to shop paintings<br>
+                Click <a href="events.html">here</a> to purchase event tickets</p>
+                <div>
+                `;
+            } else {
+                const cart = JSON.parse(storedCart);
+                cart.forEach(item => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td><img src="${item.imageLink}" alt="" width="150" height="150" /></td>
+                        <td><div class = "name">${item.name}<div></td>
+                        <td>
+                            ${item.imageLink === 'images/img/ticket.jpg' ? `
+                            <div class="minus-btn fa fa-minus"></div>
+                            <input type="text" class="quantity-input" size="1" style="background-color:#222d4f;border:none;color:white;margin-right:-17px;font-size:17px;" value="${item.quantity}">
+                            <div class="plus-btn fa fa-plus"></div>
+                        ` : `
+                            <div class="quantity-input" style="margin-left:35px;font-size:17px;">${item.quantity}</div>
+                        `}
+                        </td>
+                        <td>$${(item.price)}</td>
+                        <td><div class="remove-item fa fa-remove" style = "padding-left:15px; font-size:24px;"></div></td>
+                    `;
+                    cartItems.appendChild(row);
+                    let maxQuantity;
+                    document.addEventListener('DOMContentLoaded', function () {
+                    fetch('http://localhost:5500/getAllEvents')
+                        .then(response => response.json())
+                        .then(data => {
+                            if (typeof data == "object") {
+                                data['data'].forEach(product => {
+                                    console.log(product);
+                                    const eventName = item.name;
+                                    console.log(eventName);
+                                    console.log(product.name);
+                                    if (eventName === product.name) {
+                                        maxQuantity = product.quantity;
+                                        console.log(maxQuantity);
+                                    }
+                                });
+                            } else {
+                                console.error('Data is not an array:', data);
+                            }
+                        })
+                        .catch(error => {
+                            console.error('Error fetching data:', error);
+                        });
+                    });
+                    const plusButton = row.querySelector('.plus-btn');
+                    if (plusButton != null) {
+                        plusButton.addEventListener('click', function() {
+                            const input = row.querySelector('.quantity-input');
+                            const currentQuantity = parseInt(input.value);
+                            console.log(maxQuantity);
+                            if (currentQuantity < maxQuantity) {
+                                input.value = currentQuantity + 1;
+                                let cart = JSON.parse(sessionStorage.getItem('cart'));
+                                const index = cart.findIndex(cartItem => cartItem.name === item.name);
+                                console.log("name:" + item.name);
+                                const qtyInp = row.querySelector('.quantity-input');
+                                console.log("quan:" + qtyInp.value);
+                                if (index !== -1) {
+                                    cart[index].quantity = qtyInp.value;
+                                } 
+                                sessionStorage.setItem('cart', JSON.stringify(cart));
+                                calculateCartSubtotal(cart);
+                            } else {
+                                alert('No more tickets available!');
+                            }
+                        });
+                        const minusButton = row.querySelector('.minus-btn');
+                        minusButton.addEventListener('click', function() {
+                            const input = row.querySelector('.quantity-input');
+                            if (parseInt(input.value) > 1) {
+                                input.value = parseInt(input.value) - 1;
+                                let cart = JSON.parse(sessionStorage.getItem('cart'));
+                                const index = cart.findIndex(cartItem => cartItem.name === item.name);
+                                console.log("name:" + item.name);
+                                const qtyInp = row.querySelector('.quantity-input');
+                                console.log("quan:" + qtyInp.value);
+                                if (index !== -1) {
+                                    cart[index].quantity = qtyInp.value;
+                                } 
+                                sessionStorage.setItem('cart', JSON.stringify(cart));
+                                calculateCartSubtotal(cart);
+                            }
+                        });
+                    }
+                    const removeButton = row.querySelector('.remove-item');
+                    removeButton.addEventListener('click', function() {
+                        const index = cart.findIndex(cartItem => cartItem.name === item.name && cartItem.artist === item.artist);
+                        if (index !== -1) {
+                            cart.splice(index, 1);
+                            sessionStorage.setItem('cart', JSON.stringify(cart));
+                            row.remove();
+                            calculateCartSubtotal(cart);
+                        }
+                    });
+                });
+                calculateCartSubtotal(cart);
+            }
+        }
+        function calculateCartSubtotal(cart) {
+            let subtotal = 0;
+            cart.forEach(item => {
+                subtotal += item.price * item.quantity;
+            });
+            const cartSubtotalElement = document.getElementById('cart-subtotal');
+            if (cartSubtotalElement) {
+                cartSubtotalElement.textContent = 'Cart subtotal: $' + subtotal.toFixed(2);
+                console.log("total:"+subtotal);
+            }
+        }
+        function continueShopping() {
+            window.history.back();
+        }
+        function checkout() {
+            window.location.href="checkout.html";
+        }
+        displayCart();
+    </script>
+</body>
+
+</html>
